@@ -10,3 +10,4 @@ yagmail
 twilio
 reportlab
 qrcode
+pytesseract
