@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 flask
 opencv-python
 numpy
@@ -11,3 +12,94 @@ yagmail
 twilio
 reportlab
 qrcode
+=======
+# --- Core Python utilities ---
+python-dotenv==1.0.1
+termcolor==2.4.0
+
+# --- Data & Machine Learning ---
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+
+# --- OCR & Image Processing ---
+opencv-python==4.10.0.84
+pytesseract==0.3.10
+Pillow==10.4.0
+
+# --- Face Recognition & Embeddings ---
+# (Using OpenCV DNN + OpenFace .t7 models)
+dlib==19.24.4           # required if you extend to dlib-based embeddings
+face-recognition==1.3.0 # optional but common face lib (wraps dlib)
+
+# --- Security & Authentication ---
+bcrypt==4.1.3
+pyotp==2.9.0
+cryptography==42.0.7
+
+# --- OTP & Communication ---
+twilio==9.2.4
+yagmail==0.15.293
+# smtplib is built-in, no need to pip install
+
+# --- Excel & Reporting ---
+xlsxwriter==3.2.0
+pywin32==306             # for win32com.client on Windows
+
+# --- GUI / Optional Frontend ---
+tk==0.1.0                # if you use Tkinter GUI (sometimes not needed on Windows)
+streamlit==1.38.0        # if you build a web UI
+
+# --- Dev / Misc (optional) ---
+pygetwindow==0.0.9       # used for window positioning in your code
+
+
+# --- Core System & Utilities ---
+python-dotenv==1.0.1
+termcolor==2.4.0
+pathlib2==2.3.7.post1   # pathlib backport, safer on all platforms
+
+# --- Data & Machine Learning ---
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+joblib==1.4.2           # sklearn model persistence
+
+# --- OCR & Image Processing ---
+opencv-python==4.10.0.84
+pytesseract==0.3.10
+Pillow==10.4.0
+
+# --- Face Recognition & Embeddings ---
+# You currently use OpenCV DNN + OpenFace models
+dlib==19.24.4
+face-recognition==1.3.0
+face-recognition-models==0.3.0
+cmake==3.29.2           # needed for compiling dlib on some systems
+
+# --- Security & Authentication ---
+bcrypt==4.1.3
+pyotp==2.9.0
+cryptography==42.0.7
+
+# --- OTP & Communication ---
+twilio==9.2.4
+yagmail==0.15.293
+keyring==24.3.1         # used internally by yagmail
+requests==2.32.3        # Twilio / yagmail rely on this
+urllib3==2.2.2          # requests dependency
+
+# --- Excel & Reporting ---
+xlsxwriter==3.2.0
+openpyxl==3.1.5         # pandas Excel backend
+pywin32==306            # for win32com.client (Excel password protection)
+
+# --- GUI / Optional Frontend ---
+tk==0.1.0               # if Tkinter is used (optional)
+streamlit==1.38.0       # if you want a Streamlit dashboard
+
+# --- Miscellaneous Helpers ---
+pygetwindow==0.0.9      # used in window positioning
+pyperclip==1.9.0        # clipboard support (optional)
+colorama==0.4.6         # safer Windows console colors
+>>>>>>> fb89c415fe7a5892da4f8d6dd74b36b6586c0b39
