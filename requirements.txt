@@ -13,3 +13,5 @@ qrcode
 pytesseract
 termcolor
 pycryptodome
+reportlab
+xlsxwriter
