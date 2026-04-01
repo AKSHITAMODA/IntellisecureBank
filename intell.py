@@ -493,8 +493,10 @@ def register_and_login():
 # ------------ SMS OTP ------------
 
 def send_sms_otp(phone_number, otp):
-    account_sid = 'AC0e5beb9c4b5a07201a4b722d2f8d30fb'   # Your Twilio SID
-    auth_token = '0359ef308197eb83e769e181da3ecd35'     # Your Twilio Auth Token
+    import os
+
+    account_sid = os.getenv("TWILIO_SID")
+    auth_token = os.getenv("TWILIO_AUTH")     # Your Twilio Auth Token
     from_number = '+1 920 709 9126'                       # Your Twilio verified sender number
 
     try:
