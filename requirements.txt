@@ -11,3 +11,4 @@ twilio
 reportlab
 qrcode
 pytesseract
+termcolor
