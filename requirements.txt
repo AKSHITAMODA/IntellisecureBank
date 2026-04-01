@@ -12,3 +12,4 @@ reportlab
 qrcode
 pytesseract
 termcolor
+pycryptodome
